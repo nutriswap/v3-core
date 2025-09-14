@@ -1,5 +1,11 @@
-artifacts/
+# Ignore cache & temp files
 cache/
 crytic-export/
 node_modules/
 typechain/
+
+# Keep artifacts for contracts (needed by periphery & SDK)
+!artifacts/contracts/**/*.json
+
+# Ignore debug files (safe to exclude)
+artifacts/**/*.dbg.json
